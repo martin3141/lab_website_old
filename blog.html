@@ -19,6 +19,16 @@
             </nav>
             <h1>Lab news and blog</h1>
             <h2>28th May 2020 - Adaptive Baseline Fitting (ABfit)</h2>
-            Here is some text about stuff.
+            Very pleased to announce the acceptance of my new MR Spectroscopy analysis method "Adaptive Baseline Fitting" (ABfit), currently in press at Magnetic Resonance in Medicine: https://www.biorxiv.org/content/10.1101/2020.02.17.949495v2 @mr_spectroscopy @TheCHBH. Important thanks go to @daviniaferes for donating data to appease reviewer #1 - who was pedantic, but probably in a good way. A badly structured MRS analysis software ramble follows: <br>
+
+            In my opinion, MRS fitting algorithms haven't improved in a significant way since the LCModel method was published, a staggering 27 years ago, and this has been both a blessing and a curse for MRS. A blessing because we've had access to a robust and highly optimised method for an long time, and it has rightly become the standard approach in the literature. A curse because the method is proprietary, relatively costly ($20k), and crucially, key algorithmic details are missing from the original paper - or terse to the point of obfuscation. <br>
+
+            Whilst a debate over pros and cons of proprietary vs open source software and data is a lengthy one, it's hard to argue that fMRI has suffered from having three excellent and open analysis packages (AFNI, FSL and SPM). This initial culture of openness has likely led to important initiatives such as the NIfTI file format (MRS file formats are an absolute mess), @OpenNeuroOrg, @BIDSstandard and others.
+
+            Whilst I think ABfit is extremely useful as an MRS analysis method, its greater value is having an accompanying paper with a detailed explanation of the theory and justification for each stage of the algorithm. The method is also open source, and all code/data is freely available to fully reproduce the results of the paper (https://github.com/martin3141/spant). Finally, ABfit is integrated into a comprehensive MRS analysis package (https://github.com/martin3141/abfit_paper), written in R, to aid the development of custom processing pipelines, batch analyses, data visualization and statistical interpretation. #rstats
+
+            The hope is that open and transparent methods results in greater scrutiny and acknowledgment of their limitations - a necessary requirement for improvement. I have seen this in happening in the fMRI world, from the perspective of an interested outsider, and I think MRS would benefit from a similar culture. I've played a small part to promote this type of activity in the past through the TARQUIN software and users' group, however bigger and better efforts are currently underway thanks to Georg @oeltzschner, Brian Soher and Will Clarke's creation of the MRSHub https://mrshub.org/. Let's hope that fostering a culture of openness and transparency in MRS research will give it the final push needed to become an essential clinical tool.
+
+            Written by Martin Wilson.
     </body>
 </html>
